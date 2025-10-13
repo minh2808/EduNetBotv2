@@ -1,13 +1,14 @@
+# basic_chain.py
 import os
-from dotenv import load_dotenv
-from langchain.chat_models import ChatOpenAI
-from langchain_core.output_parsers import StrOutputParser
+# from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_community.llms import Ollama
 
 # Thêm biến môi trường để override OpenAI endpoint
 os.environ["OPENAI_API_KEY"] = "sk-w468H09Lz4NbERIUBcB25b47Fd454577A1F52498Fa377860"
+#đăng kí tài khoản dịch vụ của bạn
 os.environ["OPENAI_API_BASE"] = "https://api.llm.ai.vn/v1"
+#nơi gửi yêu cầu
 
 
 def get_model(model_name="gpt-4o"):
@@ -27,18 +28,3 @@ def basic_chain(model=None, prompt=None):
     chain = prompt | model
     return chain
 
-
-def main():
-    load_dotenv()  # nếu bạn có file .env, nhưng Ollama thì không cần API token
-
-    prompt = ChatPromptTemplate.from_template(
-        "Tell me the most noteworthy books by the author {author}"
-    )
-    chain = basic_chain(prompt=prompt) | StrOutputParser()
-
-    results = chain.invoke({"author": "William Faulkner"})
-    print(results)
-
-
-if __name__ == "__main__":
-    main()

@@ -1,3 +1,4 @@
+#ensemble.py
 import os
 
 from langchain_community.retrievers import BM25Retriever
@@ -26,7 +27,7 @@ def ensemble_retriever_from_docs(docs, embeddings=None):
     return ensemble_retriever
 
 
-def main():
+#vd
     load_dotenv()
 
     problems_of_philosophy_by_russell = "https://www.gutenberg.org/ebooks/5827.html.images"
@@ -38,8 +39,3 @@ def main():
     result = chain.invoke("What are the key problems of philosophy according to Russell?")
     print(result)
 
-
-if __name__ == "__main__":
-    # this is to quite parallel tokenizers warning.
-    os.environ["TOKENIZERS_PARALLELISM"] = "false"
-    main()

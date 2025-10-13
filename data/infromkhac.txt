@@ -1,0 +1,62 @@
+GIẢNG VIÊN BỘ MÔN MẠNG MÁY TÍNH
+
+1. TS. Nguyễn Ngọc Điệp  
+   - Chức vụ: Trưởng Bộ môn An toàn mạng  
+   - Email: diepnguyenngoc@ptit.edu.vn  
+
+2. TS. Nguyễn Thanh Thủy  
+   - Email: thuynt@ptit.edu.vn  
+   - Hướng nghiên cứu: Xử lý ngôn ngữ tự nhiên, hệ khuyến nghị  
+   - Các học phần giảng dạy: Mạng máy tính, Quản lý dự án phần mềm  
+
+3. ThS. Nguyễn Xuân Anh  
+   - Email: anhnx@ptit.edu.vn  
+   - Hướng nghiên cứu: Hệ phân tán  
+   - Các học phần giảng dạy: Các hệ thống phân tán, Cơ sở dữ liệu, Mạng máy tính  
+
+
+🖥️ TỔNG QUAN MÔN HỌC: MẠNG MÁY TÍNH (Computer Networks)
+
+- Thuộc ngành: Công nghệ thông tin / Khoa học máy tính  
+- Vị trí: Môn cơ sở ngành, học vào năm 2 hoặc năm 3  
+- Là nền tảng cho các môn nâng cao:  
+  An ninh mạng, Quản trị mạng, Điện toán đám mây, Mạng máy học phân tán  
+
+
+🎯 MỤC TIÊU MÔN HỌC
+
+- Hiểu nguyên lý hoạt động của mạng máy tính.  
+- Nắm được mô hình OSI & TCP/IP.  
+- Biết cách truyền dữ liệu qua mạng và các giao thức cơ bản.  
+- Làm quen với thiết bị mạng: router, switch, hub, modem.  
+- Có khả năng phân tích, thiết kế và cấu hình mạng cơ bản.  
+
+
+🧩 CÁC NỘI DUNG CHÍNH
+
+1. Giới thiệu mạng máy tính: khái niệm, lợi ích, phân loại (LAN, MAN, WAN, Internet).  
+2. Mô hình OSI & TCP/IP: vai trò, giao thức.  
+3. Tầng vật lý & liên kết dữ liệu: mã hóa tín hiệu, Ethernet, ARP.  
+4. Tầng mạng: IP, định tuyến, subnetting, NAT.  
+5. Tầng giao vận: TCP, UDP, bắt tay 3 bước, kiểm soát lỗi.  
+6. Tầng ứng dụng: HTTP, DNS, DHCP, SMTP.  
+7. An ninh mạng cơ bản.  
+
+
+🧠 KIẾN THỨC THỰC HÀNH
+
+- Cấu hình IP, subnet mask, gateway.  
+- Mô phỏng mạng bằng Cisco Packet Tracer hoặc GNS3.  
+- Ping, traceroute, netstat, wireshark để phân tích gói tin.  
+
+
+📚 TÀI LIỆU THAM KHẢO
+
+- “Computer Networking: A Top-Down Approach” — James F. Kurose, Keith W. Ross.  
+- “Data and Computer Communications” — William Stallings.  
+- “Mạng máy tính” — Nguyễn Văn Vỵ, NXB Giáo dục.  
+
+🎓 Khóa học online:
+- Coursera: Computer Communications and Networks (Stanford, Georgia Tech)  
+- YouTube: Neso Academy, NetworkChuck, Cisco Networking Basics  
+- Công cụ hỗ trợ: Cisco Packet Tracer, Wireshark, IP Subnet Calculator.

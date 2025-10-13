@@ -1,3 +1,4 @@
+#run_all_mains.sh
 #!/bin/bash
 
 set -e 
