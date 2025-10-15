@@ -18,7 +18,7 @@ def load_txt_files(data_dir="./data"):
     paths = list_txt_files(data_dir)
     for path in paths:
         print(f"Loading {path}")
-        loader = TextLoader(path)
+        loader = TextLoader(path , encoding="utf-8")
         docs.extend(loader.load())
     return docs
 

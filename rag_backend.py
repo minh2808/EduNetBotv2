@@ -21,6 +21,7 @@ app.add_middleware(
 
 # --- Tạo retriever & model ---
 docs = load_txt_files()
+
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 retriever = ensemble_retriever_from_docs(docs, embeddings=embeddings)
 

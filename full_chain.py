@@ -9,14 +9,19 @@ from filter import ensemble_retriever_from_docs
 from local_loader import load_txt_files
 from memory import create_memory_chain
 from rag_chain import make_rag_chain
+from remote_loader import get_wiki_docs
 
 
 def create_full_chain(retriever, openai_api_key=None, chat_memory=ChatMessageHistory()):
     model = get_model()
 
-    system_prompt = """You are a helpful AI assistant for busy professionals trying to improve their health.
-    Use the following context and the users' chat history to help the user:
-    If you don't know the answer, just say that you don't know. 
+    system_prompt = """You are a helpful AI assistant for busy IT professionals and network engineers.  
+    Your role is to provide clear, accurate guidance and troubleshooting advice for computer networks, including LAN, WAN, routing, switching, network protocols, firewalls, VPNs, and related topics.  
+    
+    Use the following context and the user's chat history to help the user.  
+    If you don't know the answer, just say that you don't know.  
+    Always communicate clearly and concisely, and avoid unnecessary jargon unless asked.
+
     
     Context: {context}
     
@@ -47,7 +52,6 @@ def ask_question(chain, query):
     else:
         print("\n[⚠️] No context found in response!\n")
     return response
-
 
 def main():
     load_dotenv()
