@@ -1,10 +1,12 @@
 # dialogue/flows.py
 import json
 from typing import Dict, List
-from langchain_openai import ChatOpenAI
+
+
+from basic_chain import get_model
 
 # --- LLM setup ---
-llm = ChatOpenAI(model_name="gpt-4o", temperature=0)  # temperature 0 → output ổn định
+llm = get_model()  # temperature 0 → output ổn định
 
 # --- Greet ---
 def greet_flow(user_name: str) -> str:
